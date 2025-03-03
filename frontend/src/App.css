@@ -1,4 +1,4 @@
-.container {
+.wrapper {
   max-width: 100%;
   padding-left: 32px;
   padding-right: 32px;
@@ -9,4 +9,15 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+.header {
+  background-color: var(--white-neutral);
+  box-shadow: var(--shadow-light);
+}
+
+.logo {
+  padding-left: 26px;
+  padding-top: 12px;
+  padding-bottom: 13px;
 }

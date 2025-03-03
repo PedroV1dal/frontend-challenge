@@ -26,6 +26,9 @@
   --spacing-regular-16: 16px;
   --spacing-little-08: 8px;
   --spacing-little-04: 4px;
+
+  --shadow-light: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 * {
@@ -36,7 +39,7 @@
 
 body {
   font-family: var(--font-family);
-  background-color: var(--white-neutral);
+  background-color: var(--gray-00);
   color: var(--black-neutral);
 }
 
