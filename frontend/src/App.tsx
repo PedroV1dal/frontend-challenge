@@ -1,5 +1,7 @@
 import "./App.css";
 import Logo from "./assets/Logo.svg";
+import { SearchInput } from "./components/atoms/SearchInput";
+import { Typography } from "./components/atoms/Typograph";
 
 function App() {
   return (
@@ -10,7 +12,10 @@ function App() {
         </div>
       </div>
       <div className="wrapper">
-        <h1>Conteúdo da página</h1>
+        <div className="top-content">
+          <Typography variant="h1">Funcinários</Typography>
+          <SearchInput placeholder="Pesquisar" />
+        </div>
       </div>
     </>
   );

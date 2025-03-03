@@ -21,3 +21,10 @@
   padding-top: 12px;
   padding-bottom: 13px;
 }
+
+.top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+}

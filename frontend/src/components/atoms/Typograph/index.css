@@ -1,0 +1,31 @@
+.typography {
+  font-family: var(--font-family);
+  color: var(--black-neutral);
+}
+
+.typography.h1 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-medium);
+}
+
+.typography.h2 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+}
+
+.typography.h3 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-regular);
+}
+
+.typography.p {
+  font-size: 14px;
+  font-weight: var(--font-weight-regular);
+}
+
+.typography.span {
+  font-size: 12px;
+}
