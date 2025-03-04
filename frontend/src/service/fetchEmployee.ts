@@ -2,7 +2,11 @@ import { formatDate, formatPhoneNumber } from "../utils/formatUtils";
 import { Employee } from "../utils/types/Employee";
 
 export async function fetchEmployees() {
-  const response = await fetch("http://localhost:3000/employees");
+  const EmployeesUrl = import.meta.env.VITE_JSON_SERVER_URL;
+  if (!EmployeesUrl) {
+    throw new Error("VITE_JSON_SERVER_URL is not defined");
+  }
+  const response = await fetch(EmployeesUrl);
   const data = await response.json();
 
   return data.map((employee: Employee) => ({
