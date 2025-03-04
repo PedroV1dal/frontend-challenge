@@ -1,0 +1,39 @@
+.table-container {
+  margin: 20px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: var(--white-neutral);
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-table thead {
+  background-color: var(--blue-primary);
+  color: var(--white-neutral);
+  text-align: left;
+}
+
+.employee-table th,
+.employee-table td {
+  padding: 12px;
+}
+
+.employee-table tbody tr {
+  border-bottom: 1px solid var(--gray-10);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.text {
+  font-size: 14px;
+  color: var(--text-color);
+}

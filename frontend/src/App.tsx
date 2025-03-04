@@ -2,6 +2,7 @@ import "./App.css";
 import Logo from "./assets/Logo.svg";
 import { SearchInput } from "./components/atoms/SearchInput";
 import { Typography } from "./components/atoms/Typograph";
+import { EmployeeTable } from "./components/organism/EmployeeTable";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Typography variant="h1">Funcinários</Typography>
           <SearchInput placeholder="Pesquisar" />
         </div>
+        <EmployeeTable />
       </div>
     </>
   );
