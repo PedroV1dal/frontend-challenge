@@ -1,0 +1,12 @@
+.table-header {
+  background-color: var(--blue-primary);
+  color: var(--white-neutral);
+  text-align: left;
+}
+
+.table-header th {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  padding: 14px 32px;
+}

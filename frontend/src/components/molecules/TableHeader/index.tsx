@@ -1,6 +1,8 @@
+import "./index.css";
+
 export function TableHeader() {
   return (
-    <thead>
+    <thead className="table-header">
       <tr>
         <th>FOTO</th>
         <th>NOME</th>

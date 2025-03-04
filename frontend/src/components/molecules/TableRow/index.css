@@ -1,0 +1,23 @@
+.table-row {
+  border-bottom: 3px solid var(--gray-00);
+  box-shadow: 0 4px 6px var(--shadow-light);
+}
+
+.table-row:first-child {
+  border-top: 3px solid var(--gray-00);
+  box-shadow: 0 4px 6px var(--shadow-light);
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-row td {
+  padding: 10px 32px;
+}
+
+.table-row .text {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-h3);
+  font-family: var(--font-heading);
+}
