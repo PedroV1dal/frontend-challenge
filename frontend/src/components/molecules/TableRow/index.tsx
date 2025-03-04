@@ -1,13 +1,6 @@
 import { Avatar } from "../../atoms/Avatar";
 import { Text } from "../../atoms/Text";
-
-interface Employee {
-  photo: string;
-  name: string;
-  role: string;
-  admissionDate: string;
-  phone: string;
-}
+import { Employee } from "../../../utils/types/Employee";
 
 interface TableRowProps {
   readonly employee: Employee;
@@ -17,16 +10,16 @@ export function TableRow({ employee }: TableRowProps) {
   return (
     <tr>
       <td>
-        <Avatar src={employee.photo} alt={employee.name} />
+        <Avatar src={employee.image} alt={employee.name} />
       </td>
       <td>
         <Text>{employee.name}</Text>
       </td>
       <td>
-        <Text>{employee.role}</Text>
+        <Text>{employee.job}</Text>
       </td>
       <td>
-        <Text>{employee.admissionDate}</Text>
+        <Text>{employee.admission_date}</Text>
       </td>
       <td>
         <Text>{employee.phone}</Text>

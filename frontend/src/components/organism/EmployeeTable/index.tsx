@@ -1,34 +1,26 @@
 import { TableHeader } from "../../molecules/TableHeader";
 import { TableRow } from "../../molecules/TableRow";
+import { useEffect, useState } from "react";
+import { Employee } from "../../../utils/types/Employee";
+
+import { fetchEmployees } from "../../../service/fetchEmployee";
 
 import "./index.css";
 
-const employees = [
-  {
-    photo: "https://randomuser.me/api/portraits/women/1.jpg",
-    name: "Giovana L. Arruda",
-    role: "Front-end",
-    admissionDate: "00/00/0000",
-    phone: "+55 (55) 55555-555",
-  },
-  {
-    photo: "https://randomuser.me/api/portraits/women/2.jpg",
-    name: "Vanessa Machado",
-    role: "Front-end",
-    admissionDate: "00/00/0000",
-    phone: "+55 (55) 55555-555",
-  },
-  // ... outros funcionários
-];
-
 export function EmployeeTable() {
+  const [employees, setEmployees] = useState<Employee[]>([]);
+
+  useEffect(() => {
+    fetchEmployees().then(setEmployees);
+  }, []);
+
   return (
     <div className="table-container">
       <table className="employee-table">
         <TableHeader />
         <tbody>
           {employees.map((employee) => (
-            <TableRow key={employee.name} employee={employee} />
+            <TableRow key={employee.id} employee={employee} />
           ))}
         </tbody>
       </table>
