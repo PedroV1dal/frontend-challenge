@@ -3,8 +3,10 @@ import Logo from "./assets/Logo.svg";
 import { SearchInput } from "./components/atoms/SearchInput";
 import { Typography } from "./components/atoms/Typograph";
 import { EmployeeTable } from "./components/organism/EmployeeTable";
+import { useState } from "react";
 
 function App() {
+  const [searchTerm, setSearchTerm] = useState<string>("");
   return (
     <>
       <div className="header">
@@ -15,9 +17,9 @@ function App() {
       <div className="wrapper">
         <div className="top-content">
           <Typography variant="h1">Funcinários</Typography>
-          <SearchInput placeholder="Pesquisar" />
+          <SearchInput placeholder="Pesquisar" onSearch={setSearchTerm} />
         </div>
-        <EmployeeTable />
+        <EmployeeTable searchTerm={searchTerm} />
       </div>
     </>
   );
