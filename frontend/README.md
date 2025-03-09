@@ -15,7 +15,9 @@ Antes de rodar a aplicação, certifique-se de que você tem os seguintes requis
 - **Node.js**: Versão 16.x ou superior. Você pode baixar e instalar a partir do [site oficial](https://nodejs.org/).
 - **pnpm**: Este projeto utiliza pnpm como gerenciador de pacotes. Para instalar, execute:
 
+```
 npm install -g pnpm
+```
 
 - **Nota**: Embora o projeto tenha sido configurado com pnpm, é possível usar npm ou yarn, mas você precisará ajustar os comandos de instalação e execução conforme o gerenciador escolhido.
 - **json-server**: Usado para criar a API mock que fornece os dados dos funcionários. Instale globalmente com:
