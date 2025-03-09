@@ -31,7 +31,7 @@ export function TableRow({ employee }: TableRowProps) {
         <td className="hide-on-mobile">
           <Text>{employee.phone}</Text>
         </td>
-        <td className="mobile-toggle" colSpan={1}>
+        <td className="mobile-toggle">
           {isExpanded ? (
             <img src={ChevronUp} alt="Chevron Up" />
           ) : (
