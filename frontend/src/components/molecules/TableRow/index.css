@@ -94,6 +94,12 @@
     width: auto;
   }
 
+  @media (max-width: 380px) {
+    .mobile-toggle {
+      right: 12%;
+    }
+  }
+
   @media (max-width: 470px) {
     .expanded-row .expanded-content p {
       display: block;

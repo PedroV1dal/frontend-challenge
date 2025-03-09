@@ -8,11 +8,23 @@
   font-family: var(--font-heading);
   font-size: var(--font-size-h2);
   font-weight: var(--font-weight-medium);
-  padding: 14px 32px;
+  padding: 10px 32px;
 }
 
 @media (max-width: 870px) {
   .hide-on-mobile {
     display: none;
+  }
+}
+
+@media (max-width: 740px) {
+  .table-header th {
+    padding: 10px 20px; /* Ajuste para telas entre 320px e 740px, igual ao .table-row td */
+  }
+}
+
+@media (max-width: 320px) {
+  .table-header th {
+    padding: 8px 12px;
   }
 }
