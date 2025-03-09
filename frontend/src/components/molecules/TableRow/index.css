@@ -33,13 +33,13 @@
 
   .expanded-row .expanded-content {
     display: flex;
-    flex-direction: column; /* Faz com que os títulos e informações fiquem em coluna */
+    flex-direction: column;
     padding: 10px 32px;
     gap: 8px;
   }
 
   .expanded-row .expanded-content p {
     display: flex;
-    justify-content: space-between; /* Alinha título à esquerda e valor à direita */
+    justify-content: space-between;
   }
 }
