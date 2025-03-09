@@ -26,6 +26,25 @@
   font-family: var(--font-heading);
 }
 
+.expanded-content p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 4px 0;
+}
+
+.label {
+  font-weight: bold;
+  color: var(--black-neutral);
+  font-size: var(--font-size-h2);
+}
+
+.value {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-h3);
+  text-align: right;
+}
+
 @media (min-width: 740px) {
   .mobile-toggle {
     display: none;
@@ -47,5 +66,15 @@
   .expanded-row .expanded-content p {
     display: flex;
     justify-content: space-between;
+  }
+
+  .mobile-toggle {
+    text-align: right; /* Alinha o ícone ao canto direito */
+    padding-right: 16px; /* Ajusta o espaçamento à direita */
+  }
+
+  .mobile-toggle img {
+    width: 16px;
+    height: 16px;
   }
 }

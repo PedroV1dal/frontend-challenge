@@ -33,9 +33,9 @@ export function TableRow({ employee }: TableRowProps) {
         </td>
         <td className="mobile-toggle" colSpan={1}>
           {isExpanded ? (
-            <img src={ChevronDown} alt="Chevron Down" />
-          ) : (
             <img src={ChevronUp} alt="Chevron Up" />
+          ) : (
+            <img src={ChevronDown} alt="Chevron Down" />
           )}
         </td>
       </tr>
@@ -44,13 +44,16 @@ export function TableRow({ employee }: TableRowProps) {
           <td colSpan={5}>
             <div className="expanded-content">
               <p>
-                <strong>Cargo:</strong> {employee.job}
+                <span className="label">Cargo:</span>
+                <span className="value">{employee.job}</span>
               </p>
               <p>
-                <strong>Data de Admissão:</strong> {employee.admission_date}
+                <span className="label">Data de Admissão:</span>
+                <span className="value">{employee.admission_date}</span>
               </p>
               <p>
-                <strong>Telefone:</strong> {employee.phone}
+                <span className="label">Telefone:</span>
+                <span className="value">{employee.phone}</span>
               </p>
             </div>
           </td>
