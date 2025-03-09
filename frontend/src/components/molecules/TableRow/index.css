@@ -16,8 +16,30 @@
   padding: 10px 32px;
 }
 
+.expanded-row {
+  display: none;
+}
+
 .table-row .text {
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-h3);
   font-family: var(--font-heading);
+}
+
+@media (max-width: 740px) {
+  .expanded-row {
+    display: table-row;
+  }
+
+  .expanded-row .expanded-content {
+    display: flex;
+    flex-direction: column; /* Faz com que os títulos e informações fiquem em coluna */
+    padding: 10px 32px;
+    gap: 8px;
+  }
+
+  .expanded-row .expanded-content p {
+    display: flex;
+    justify-content: space-between; /* Alinha título à esquerda e valor à direita */
+  }
 }
