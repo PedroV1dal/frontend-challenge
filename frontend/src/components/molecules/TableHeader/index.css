@@ -19,7 +19,7 @@
 
 @media (max-width: 740px) {
   .table-header th {
-    padding: 10px 20px; /* Ajuste para telas entre 320px e 740px, igual ao .table-row td */
+    padding: 10px 20px;
   }
 }
 
