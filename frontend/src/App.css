@@ -29,7 +29,7 @@
   margin-top: 32px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 870px) {
   .top-content {
     flex-direction: column;
     align-items: stretch;
