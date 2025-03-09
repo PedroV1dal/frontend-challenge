@@ -10,3 +10,9 @@
   font-weight: var(--font-weight-medium);
   padding: 14px 32px;
 }
+
+@media (max-width: 740px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
