@@ -26,6 +26,12 @@
   font-family: var(--font-heading);
 }
 
+@media (min-width: 740px) {
+  .mobile-toggle {
+    display: none;
+  }
+}
+
 @media (max-width: 740px) {
   .expanded-row {
     display: table-row;
